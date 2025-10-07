@@ -1,0 +1,95 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen flex container */
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Center the box */
+.container {
+    display: flex;
+    justify-content: center; /*horizontol centring*/
+    align-items: center;   /*verticle centring*/
+    height: 100%;
+}
+
+/* Login box styling */
+.login-box {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 320px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Input field group */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    border-color: #6c5ce7;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5a4bcf;
+}
+
+/* Forgot password link */
+.forgot {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: #6c5ce7;
+    font-size: 14px;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
