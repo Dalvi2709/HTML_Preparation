@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+            color: rgb(48, 48, 53);
+        }
+
+        p {
+            color: rgb(63, 18, 18);
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Inline CSS
+An inline CSS is used to apply a unique style to a single HTML element.
+An inline CSS uses the style attribute of an HTML element.
+The following example sets the text color of the <h1> element to blue, and the text color of the <p> element to red: -->
+
+    <h1 style="color:blue;">A Blue Heading</h1>
+    <p style="color:red;">A red paragraph.</p>
+
+    <!-- Internal CSS
+An internal CSS is used to define a style for a single HTML page.
+An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+The following example sets the text color of ALL the <h1> elements (on that page) to blue, and the text color of ALL the <p> elements to red. In addition, the page will be displayed with a "powderblue" background color:  -->
+
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+
+    <!-- External CSS
+An external style sheet is used to define the style for many HTML pages.
+To use an external style sheet, add a link to it in the <head> section of each HTML page: -->
+
+
+    <!-- HTML Links - Hyperlinks
+    HTML links are hyperlinks.
+    You can click on a link and jump to another document.
+    When you move the mouse over a link, the mouse arrow will turn into a little hand. -->
+
+    <a href="" target="">
+
+        <!-- Absolute URLs vs. Relative URLs
+Both examples above are using an absolute URL (a full web address) in the href attribute.
+A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part): -->
+        <h2>Absolute URLs</h2>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
+
+        <h2>Relative URLs</h2>
+        <p><a href="html_images.asp">HTML Images</a></p>
+        <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+
+        <!--  HTML Links - Use an Image as a Link
+        To use an image as a link, just put the <img> tag inside the <a> tag: -->
+
+        <a href="default.asp">
+            <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+        </a>
+
+        <!-- Link to an Email Address
+        Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a
+        new email): -->
+
+        <a href="mailto:someone@example.com">Send email</a>
+
+        <!-- Button as a Link
+        To use an HTML button as a link, you have to add some JavaScript code.
+
+        JavaScript allows you to specify what happens at certain events, such as a click of a button: -->
+
+        <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+        <!-- Create a Bookmark in HTML
+        Bookmarks can be useful if a web page is very long.
+        To create a bookmark - first create the bookmark, then add a link to it.
+        When the link is clicked, the page will scroll down or up to the location with the bookmark. -->
+
+        <h3 id="bookmark">this is bookmark</h3>
+
+        <a href="/practice_head.html#c4">jump to bookmark</a>
+
+
+</body>
+
+</html>
