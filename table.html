@@ -8,7 +8,8 @@
             border-collapse: collapse;
             width: 100%;
         }
-        h2{
+
+        h2 {
             margin-left: 50%;
         }
 
@@ -68,29 +69,71 @@
             <td>Italy</td>
         </tr>
     </table>
-    <table border="1">
-        <tr>
-          <th colspan="2">Name</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Roshan</td>
-          <td>Dalvi</td>
-          <td>22</td>
-        </tr>
-      </table>
-      <table border="1">
-        <tr>
-          <th rowspan="2">Name</th>
-          <th>Subject</th>
-        </tr>
-        <tr>
-          <td>Maths</td>
-        </tr>
-      </table>
-      
-      
 
+    <!-- You must use rowspan and colspan inside <td> or <th> tags only, -->
+    <!-- HTML Table Colspan & Rowspan -->
+
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Roshan</td>
+            <td>Dalvi</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th>Subject</th>
+        </tr>
+        <tr>
+            <td>Maths</td>
+        </tr>
+    </table>
+
+    <!-- HTML Table - Cell Padding
+    Cell padding is the space between the cell edges and the cell content.
+    By default the padding is set to 0.
+    To add padding on table cells, use the CSS padding property: -->
+
+    <!-- th, td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+      } -->
+
+    <!-- HTML Table - Cell Spacing
+    Cell spacing is the space between each cell.
+    By default the space is set to 2 pixels.
+    To change the space between table cells, use the CSS border-spacing property on the table element: -->
+
+    <!-- table {
+        border-spacing: 17px;
+      } -->
+
+
+    <!-- td:nth-child(even), th:nth-child(even) {
+        background-color: #D6EEEE;
+      } -->
+
+    <!-- Hoverable Table
+    Use the :hover selector on tr to highlight table rows on mouse over: -->
+    <!-- tr:hover {background-color: #D6EEEE;}  in head sectin stye tag inside use-->
+
+    <!-- The <colgroup> element is used to style specific columns of a table. -->
+    <!-- The <colgroup> element should be used as a container for the column specifications.
+        Each group is specified with a
+        <col> element.
+        The span attribute specifies how many columns get the style.
+        The style attribute specifies the style to give the columns. -->
+    <!-- 
+    Note: The <colgroup> tag must be a child of a <table> element and should be placed before any other table elements,
+            like <thead>, <tr>, <td> etc., but after the <caption> element, if present. -->
+                
 </body>
 
 </html>
